@@ -14,4 +14,4 @@ Due to my language proficiency, I only included English, Japanese, Spanish, and 
 
 The API for deepL and telegram are included in the .py file because they are free. If anyone wants to recreate this, it is recommended to aquire APIs on their own. 
 
-I aquired @lebab_bot for myself, but this bot is currently not working. It is because I was not able to find a server that runs this code 24/7 for free. 
+I aquired @lebab_bot for myself, but this bot is currently not operating. It is because I was not able to find a server that runs this code 24/7 for free. 
