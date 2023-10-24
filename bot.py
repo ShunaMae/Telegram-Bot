@@ -5,7 +5,7 @@ import telegram.ext
 from telegram.ext.updater import Updater 
 from telegram.update import Update
 
-
+## These are free api
 deepl_api = "cea5033b-ca96-6681-fe59-cfc64050d7c5:fx"
 tele_api = "6347121518:AAHfRqY2ClL2TVi3RwdcFklTgjr8dWHZ9Jo"
 BOT_USERNAME = '@lebab_bot'
@@ -29,10 +29,6 @@ def what_command(update, context):
 def lang_command(update, context):
     update.message.reply_text("Please choose the tanget language: en (English), ja(Japanese), es (Spanish), zh(Chinese)")
     context.user_data['waiting_for_target_lang'] = True
-
-
-def jasmine_command(update, context):
-    update.message.reply_text("Jasmine is my beautiful soon-to-be wife. She is the motivation of my life, and I cannot thank her enough for how much she has done for me so far. I love her very much :) ")
 
 def list_command(update, context):
     update.message.reply_text("The availabe commands are \n /start: It will welcome you to this bot. \n /what: It will tell you what this bot can do.\n /lang: Used to select the target lauguage \list: show the available commands.")
@@ -79,7 +75,6 @@ dp.add_handler(telegram.ext.CommandHandler("start", start_command))
 dp.add_handler(telegram.ext.CommandHandler("what", what_command))
 dp.add_handler(telegram.ext.CommandHandler("lang", lang_command))
 dp.add_handler(telegram.ext.CommandHandler("list", list_command))
-dp.add_handler(telegram.ext.CommandHandler("jasmine", jasmine_command))
 dp.add_handler(telegram.ext.MessageHandler(telegram.ext.Filters.text, handle_message))
 
 updater.start_polling()
